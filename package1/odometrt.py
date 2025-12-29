@@ -3,6 +3,24 @@ import plotly.graph_objects as go
 
 
 def odometer1():
+    st1.markdown("""
+        <style>
+                 stApp{
+                 background-color:
+                 var(--background-color);
+                 color:var(--text-color);
+                 }
+        st.Button>button{
+                 background-color:
+                 var(--primary-color);
+                 color:var(--text-color);
+                 }
+                 </style>
+
+
+
+
+     """,unsafe_allow_html=True)
     st1.title("input based odometer")
     weight=st1.number_input("enter your weight(kg) ",min_value=1.0,step=0.5)                    
     height=st1.number_input("enter your height(cm)",min_value=50.0,step=1.0) 
